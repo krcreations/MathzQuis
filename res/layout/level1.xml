@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/levelback"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="Level 1"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="33dp"
+        android:text="What is the Answer for the Below Addition ?"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="39dp"
+        android:text="2 + 4 = "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/txt1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="OK" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78dp"
+        android:src="@drawable/icons1" 
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/img1"
+        android:layout_alignTop="@+id/img1"
+        android:src="@drawable/icons02" 
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>
